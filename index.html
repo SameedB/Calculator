@@ -1,75 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <link href="style.css" rel="stylesheet">
+    <head>
+        <title>Calculator</title>
+        <meta charset = "UTF-8" />
+        <link href = "style.css" rel="stylesheet">
+    </head>
     <body>
-        <h1>Calculator</h1>
         <div id="calculator">
-            <form name="calculator">
-                <table>
-                    <tr>
-                        <td colspan="4"> <!-- colspan Important -->
-                            <input type="text" name="display" id="display" disabled>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="one" value="1">
-                        </td>
-                        <td>
-                            <input type="button" name="one" value="2">
-                        </td>
-                        <td>
-                            <input type="button" name="one" value="3">
-                        </td>
-                        <td>
-                            <input type="button" name="add" value="+">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="four" value="4">
-                        </td>
-                        <td>
-                            <input type="button" name="five" value="5">
-                        </td>
-                        <td>
-                            <input type="button" name="six" value="6">
-                        </td>
-                        <td>
-                            <input type="button" name="subtract" value="-">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="seven" value="7">
-                        </td>
-                        <td>
-                            <input type="button" name="eight" value="8">
-                        </td>
-                        <td>
-                            <input type="button" name="nine" value="9">
-                        </td>
-                        <td>
-                            <input type="button" name="multiply" value="*">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="clear" value="c">
-                        </td>
-                        <td>
-                            <input type="button" name="zero" value="0">
-                        </td>
-                        <td>
-                            <input type="button" name="equals" value="=">
-                        </td>
-                        <td>
-                            <input type="button" name="divide" value="/">
-                        </td>
-                    </tr>
-                </table>
-            </form>
+            <div id="calc-display">0</div>
+
+            <div class="calc-keys">
+                <button type="button" id="btn" class="all-clear" value="all-clear">C</button>
+                <button type="button" id="btn" class="operator" value="/">&divide;</button>
+                <button type="button" id="btn" class="operator" value="*">&times;</button>
+                <button type="button" id="btn" class="operator" value="-">-</button>
+
+                <button type="button" id="btn" class="number" value="7">7</button>
+                <button type="button" id="btn" class="number" value="8">8</button>
+                <button type="button" id="btn" class="number" value="9">9</button>
+                <button type="button" id="btn" class="plus" value="+">+</button>
+
+                <button type="button" id="btn" class="number" value="4">4</button>
+                <button type="button" id="btn" class="number" value="5">5</button>
+                <button type="button" id="btn" class="number" value="6">6</button>
+
+                <button type="button" id="btn" class="number" value="1">1</button>
+                <button type="button" id="btn" class="number" value="2">2</button>
+                <button type="button" id="btn" class="number" value="3">3</button>
+                <button type="button" id="btn" class="equals" value="=">=</button>
+
+                <button type="button" id="btn" class="zero" value="0">0</button>
+                <button type="button" id="btn" class="decimal" value=".">.</button>
+            </div>
         </div>
+        <script src = "main.js"></script>
     </body>
-    <script src="main.js"></script>
 </html>
